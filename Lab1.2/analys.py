@@ -11,6 +11,11 @@ years = list(map(getvalue, sheet["A"][1:]))
 temps = list(map(getvalue, sheet["C"][1:]))
 acts = list(map(getvalue, sheet["D"][1:]))
 
-pyplot.plot(years, temps)
-pyplot.plot(years, acts)
+pyplot.plot(years, temps, label="Температура")
+pyplot.plot(years, acts, label="Активность")
+
+pyplot.xlabel("Год")
+pyplot.ylabel("Изменения")
+
 pyplot.show()
+
