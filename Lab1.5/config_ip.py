@@ -12,5 +12,5 @@ for fls in files:
 
 list2 = list(set(list1))
 
-for i in list2:
+for i in list1:
     print(i)
